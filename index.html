@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivy Wren | VIP Fan Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 5vh 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .hero, .about, .payment-section, .faq {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+    .cta-button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: #ff0077;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e6006b;
+    }
+    .btc-address {
+      display: inline-flex;
+      align-items: center;
+      background: #111;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-family: monospace;
+      margin: 1rem auto;
+    }
+    .copy-btn {
+      margin-left: 10px;
+      padding: 0.4rem 0.8rem;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background-color: #111;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nora Rivers VIP Fan Club</h1>
+    <p>Get exclusive content + join my private Telegram</p>
+  </header>
+
+  <section class="hero">
+    <img src="nora 2.jpg" alt="Ivy Wren" />
+    <br>
+    <button class="cta-button" onclick="document.getElementById('payment').scrollIntoView({ behavior: 'smooth' });">Join My Private Club</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hey love, I’m Ivy — a little wild, a little sweet, and a lot of fun. I made this private fan club because I wanted a space that’s just for my real ones. It’s where I share exclusive pics, videos, and behind-the-scenes content you won’t see on social media.</p>
+    <p>Everything goes down in my private Telegram group — and yes, it’s 100% me chatting and posting. No bots, no managers, just me and you.</p>
+  </section>
+
+  <section class="payment-section" id="payment">
+    <h2>Send $20 worth of BTC</h2>
+    <div class="btc-address">
+      <span id="btcAddress">147ZFcHM33bRnZ2SyiLSVyHDFhj3mmsiH7</span>
+      <button class="copy-btn" onclick="copyAddress()">Copy</button>
+    </div>
+    <p>Send proof to <strong>rl4664388@gmail.com</strong> or <a href="https://t.me/IvyWrenVIP" style="color:#ff0077;">@IvyWrenVIP</a></p>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Got Questions?</h2>
+    <p><strong>Is this real?</strong><br>
+    Yep — everything here is run by me. I use crypto for privacy, and I personally check every message.</p>
+    <p><strong>When do I get access?</strong><br>
+    Usually within 1–2 hours. If I’m online, even faster.</p>
+    <p><strong>What if I don’t get added?</strong><br>
+    Just send me a message. I’ll fix it. Promise.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Nora Rivers Fan Club. All rights reserved.
+  </footer>
+
+  <script>
+    function copyAddress() {
+      const address = document.getElementById("btcAddress").textContent;
+      navigator.clipboard.writeText(address).then(() => {
+        alert("BTC address copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
